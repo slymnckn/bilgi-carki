@@ -189,9 +189,22 @@ function MenuScreen({ onPlay, onSettings }: { onPlay: () => void; onSettings: ()
 }
 
 function generateTeams(count: number): Team[] {
-  const teamColors = ["#ea580c", "#f97316", "#0ea5e9", "#10b981", "#8b5cf6", "#f59e0b", "#ef4444", "#06b6d4"]
+  const teamColors = [
+    "#ff0080", // Hot pink
+    "#00ff80", // Bright green
+    "#8000ff", // Electric purple
+    "#ff8000", // Bright orange
+    "#0080ff", // Electric blue
+    "#ffff00", // Bright yellow
+    "#ff4000", // Red-orange
+    "#40ff00", // Lime green
+    "#ff00ff", // Magenta
+    "#00ffff", // Cyan
+    "#ff6600", // Orange
+    "#6600ff"  // Blue-purple
+  ]
 
-  const teamLogos = ["🔥", "⚡", "🌟", "💎", "🚀", "⭐", "💫", "🎯"]
+  const teamLogos = ["🔥", "⚡", "🌟", "💎", "🚀", "⭐", "💫", "🎯", "🌈", "✨", "💥", "🎨"]
 
   return Array.from({ length: count }, (_, i) => ({
     id: i + 1,
